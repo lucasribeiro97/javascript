@@ -5,26 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados com JS</title>
-    <style>
-        body {
-            font: normal 12pt Arial;
-        }
-
-        input {
-            font: normal 12pt Arial;
-            padding: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <h1>Trabalhando com Dados v2.0</h1>
     <input type="button" value="Clique para começar" onclick="botao()">
     <p id="res">Aqui vai aparecer o resultado...</p>
-    <script>
-        function botao() {
-            var nome = window.prompt('Qual é o seu nome?')
-            res.innerHTML = `Olá, <strong>${nome}!</strong> É um grande prazer te conhecer!🖖`
-        }
-    </script>
 </body>
 </html>

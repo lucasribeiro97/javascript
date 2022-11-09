@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    font: normal 12pt Arial;
+}
+
+input {
+    font: normal 12pt Arial;
+    padding: 30px;
+}
