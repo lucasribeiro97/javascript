@@ -1,13 +1,13 @@
-function tabuada() {
+function fatorar() {
     let n = Number(document.getElementById('txtn').value)
-    res.innerHTML = `<p>Tabuada de <strong>${n}</strong></p>`
-    if (n.length == 0) {
-        window.alert('Por favor, digite um número!')
-    } else {
-        let c = 1
-        while (c <= 10) {
-            res.innerHTML += `${n} x ${c} = <strong>${n*c}</strong> <br>`
-            c++
-        }
+
+    res.innerHTML += `<h2>Calculando ${n}!</h2>`
+    let c = n
+    let fat = 1
+    while (c > 1) {
+        res.innerHTML += `${c} x `
+        fat *= c
+        c--
     }
+    res.innerHTML += `1 = <strong>${fat.toLocaleString('pt-BR')}</strong>`
 }
